@@ -1,0 +1,48 @@
+2020-02-28 22:08:34.276 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:08:35.611 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"1f91712a-b2eb-4cc9-bb58-ef2404fdca4e","Severity":1,"Type":""}
+2020-02-28 22:08:35.649 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:36:09.839 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:36:11.161 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"b2747f68-9d7c-4285-85c1-9fd952e0a318","Severity":1,"Type":""}
+2020-02-28 22:36:11.193 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:36:55.614 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:36:57.163 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"c02e3265-e60c-4716-93ef-b8e2419857d4","Severity":1,"Type":""}
+2020-02-28 22:36:57.193 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:37:41.672 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:37:50.672 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"3abf4859-1714-4386-a5c0-1f23917596da","Severity":1,"Type":""}
+2020-02-28 22:37:52.659 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:38:17.697 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:38:19.630 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"74ff61fe-4d4a-411b-8079-9a59b8aa3060","Severity":1,"Type":""}
+2020-02-28 22:38:20.427 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:38:33.720 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:38:34.856 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"da8c7dcb-b025-40c8-ad56-5e985f14d9d8","Severity":1,"Type":""}
+2020-02-28 22:38:34.882 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:39:15.086 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:39:16.212 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"84356edf-e5f7-4186-b04a-db21f4c008df","Severity":1,"Type":""}
+2020-02-28 22:39:16.235 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:39:48.094 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:39:50.417 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"ca914ca2-3228-4b2a-a15e-1d90b05a8007","Severity":1,"Type":""}
+2020-02-28 22:39:51.295 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:40:15.540 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:40:16.687 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"3f2288e4-6ee4-4ff8-a4ee-96b42a032150","Severity":1,"Type":""}
+2020-02-28 22:40:16.707 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:41:20.232 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:41:21.435 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"f4c2d893-eddb-4995-a26f-f1a54a766cee","Severity":1,"Type":""}
+2020-02-28 22:41:21.456 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:41:38.765 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:41:39.892 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"9ba62209-6e99-4033-8ae6-163fb91ad9e2","Severity":1,"Type":""}
+2020-02-28 22:41:39.914 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:42:55.411 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:42:56.875 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"897b819f-2105-432e-949e-47a5c20109d7","Severity":1,"Type":""}
+2020-02-28 22:42:56.934 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:43:28.630 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:43:30.437 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"37a8ebe5-7008-4b4e-8296-2d4b46ef6c16","Severity":1,"Type":""}
+2020-02-28 22:43:30.474 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:44:38.423 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:44:40.014 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"efe28afb-345b-469c-881e-947f39474653","Severity":1,"Type":""}
+2020-02-28 22:44:40.058 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:45:16.682 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:45:18.396 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"07133a03-b392-4adf-89d3-41083e50f63d","Severity":1,"Type":""}
+2020-02-28 22:45:18.456 +11:00 [INF] SNMP Trap sent successfully!
+2020-02-28 22:45:31.534 +11:00 [INF] Starting to send SNMP message!
+2020-02-28 22:45:32.935 +11:00 [INF] Message to send:  {"ServiceName":"MySql8.0","Executable":"mysqld.exe","Hostname":"rahman-hp","HostIpAddress":"192.168.1.168","Source":"Custom SNMP Trap V1","MessageKey":"edd08aad-3f94-45d4-b65f-5682f22c98d7","Severity":1,"Type":""}
+2020-02-28 22:45:32.996 +11:00 [INF] SNMP Trap sent successfully!

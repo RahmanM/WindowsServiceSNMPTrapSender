@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Serilog.Sinks.Udp</name>
+    </assembly>
+    <members>
+        <member name="T:Serilog.LoggerSinkConfigurationExtensions">
+            <summary>
+            Adds the WriteTo.Udp() extension method to <see cref="T:Serilog.LoggerConfiguration"/>.
+            </summary>
+        </member>
+        <member name="M:Serilog.LoggerSinkConfigurationExtensions.Udp(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.Int32,System.Net.Sockets.AddressFamily,System.Int32,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch,System.String,System.IFormatProvider)">
+            <summary>
+            Adds a sink that sends log events as UDP packages over the network.
+            </summary>
+            <param name="sinkConfiguration">
+            Logger sink configuration.
+            </param>
+            <param name="remoteAddress">
+            The IP address or hostname of the remote host or multicast group to which the UDP
+            client should sent the log events, e.g. "10.0.0.100" or "www.log-receiver.com".
+            </param>
+            <param name="remotePort">
+            The TCP port of the remote host or multicast group to which the UDP client should sent
+            the logging event.
+            </param>
+            <param name="family">
+            Either <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork"/> for IPv4 or
+            <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6"/> for IPv6, specifying the addressing scheme
+            of the socket.
+            </param>
+            <param name="localPort">
+            The TCP port from which the UDP client will communicate. The default is 0 and will
+            cause the UDP client not to bind to a local port.
+            </param>
+            <param name="restrictedToMinimumLevel">
+            The minimum level for events passed through the sink. The default is
+            <see cref="F:Serilog.Events.LevelAlias.Minimum"/>.
+            </param>
+            <param name="levelSwitch">
+            A switch allowing the pass-through minimum level to be changed at runtime.
+            </param>
+            <param name="outputTemplate">
+            A message template describing the format used to write to the sink. The default is
+            "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level}] {Message}{NewLine}{Exception}".
+            </param>
+            <param name="formatProvider">
+            Supplies culture-specific formatting information, or null.
+            </param>
+            <returns>
+            Logger configuration, allowing configuration to continue.
+            </returns>
+        </member>
+        <member name="M:Serilog.LoggerSinkConfigurationExtensions.Udp(Serilog.Configuration.LoggerSinkConfiguration,System.String,System.Int32,System.Net.Sockets.AddressFamily,Serilog.Formatting.ITextFormatter,System.Int32,Serilog.Events.LogEventLevel,Serilog.Core.LoggingLevelSwitch)">
+            <summary>
+            Adds a sink that sends log events as UDP packages over the network.
+            </summary>
+            <param name="sinkConfiguration">
+            Logger sink configuration.
+            </param>
+            <param name="remoteAddress">
+            The IP address or hostname of the remote host or multicast group to which the UDP
+            client should sent the log events, e.g. "10.0.0.100" or "www.log-receiver.com".
+            </param>
+            <param name="remotePort">
+            The TCP port of the remote host or multicast group to which the UDP client should sent
+            the logging event.
+            </param>
+            <param name="family">
+            Either <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork"/> for IPv4 or
+            <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6"/> for IPv6, specifying the addressing scheme
+            of the socket.
+            </param>
+            <param name="formatter">
+            Controls the rendering of log events into text, for example to log JSON. To control
+            plain text formatting, use the overload that accepts an output template.
+            </param>
+            <param name="localPort">
+            The TCP port from which the UDP client will communicate. The default is 0 and will
+            cause the UDP client not to bind to a local port.
+            </param>
+            <param name="restrictedToMinimumLevel">
+            The minimum level for events passed through the sink. The default is
+            <see cref="F:Serilog.Events.LevelAlias.Minimum"/>.
+            </param>
+            <param name="levelSwitch">
+            A switch allowing the pass-through minimum level to be changed at runtime.
+            </param>
+            <returns>
+            Logger configuration, allowing configuration to continue.
+            </returns>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.Private.IUdpClient">
+            <summary>
+            Interface responsible for sending UDP messages.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.Udp.Private.IUdpClient.Client">
+            <summary>
+            Gets the underlying network <see cref="T:System.Net.Sockets.Socket"/>.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.Private.IUdpClient.SendAsync(System.Byte[],System.Int32,System.Net.IPEndPoint)">
+            <summary>
+            Sends a UDP datagram asynchronously to a remote host.
+            </summary>
+            <param name="datagram">
+            An array of type <see cref="T:System.Byte"/> that specifies the UDP datagram that you intend to
+            send represented as an array of bytes.
+            </param>
+            <param name="bytes">
+            The number of bytes in the datagram.
+            </param>
+            <param name="endPoint">
+            An <see cref="T:System.Net.IPEndPoint"/> that represents the host and port to which to send the datagram.
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.Private.IUdpClient.SendAsync(System.Byte[],System.Int32,System.String,System.Int32)">
+            <summary>
+            Sends a UDP datagram asynchronously to a remote host.
+            </summary>
+            <param name="datagram">
+            An array of type <see cref="T:System.Byte"/> that specifies the UDP datagram that you intend to
+            send represented as an array of bytes.
+            </param>
+            <param name="bytes">
+            The number of bytes in the datagram.
+            </param>
+            <param name="hostname">
+            The name of the remote host to which you intend to send the datagram.
+            </param>
+            <param name="port">
+            The remote port number with which you intend to communicate.
+            </param>
+            <returns>
+            Returns <see cref="T:System.Threading.Tasks.Task`1"/>.
+            </returns>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.Private.IUdpClient.Close">
+            <summary>
+            Closes the UDP connection.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.Private.NullSink">
+            <summary>
+            An instance of this sink may be substituted when an instance of the <see cref="T:Serilog.Sinks.Udp.Private.UdpSink"/>
+            is unable to be constructed.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.Udp.Private.RemoteEndPoint.IPEndPoint">
+             <summary>
+             It's a very small performance optimization to parse the IP address and use it instead
+             of having the HTTP client trying to resolve the address and figure out that it isn't a
+             hostname at all but instead an ordinary IP address.
+            
+             A small optimization indeed, but one that was requested by one of the consumers of the
+             package.
+             </summary>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.Private.UdpClientFactory">
+            <summary>
+            Factory class acting as a singleton producing instances of <see cref="T:Serilog.Sinks.Udp.Private.IUdpClient"/>.
+            </summary>
+        </member>
+        <member name="P:Serilog.Sinks.Udp.Private.UdpClientFactory.Create">
+            <summary>
+            Gets or sets the factory creating instances of <see cref="T:Serilog.Sinks.Udp.Private.IUdpClient"/>.
+            </summary>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.Private.UdpSink">
+            <summary>
+            Send log events as UDP packages over the network.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.Private.UdpSink.EmitBatchAsync(System.Collections.Generic.IEnumerable{Serilog.Events.LogEvent})">
+            <inheritdoc />
+        </member>
+        <member name="M:Serilog.Sinks.Udp.Private.UdpSink.Dispose(System.Boolean)">
+            <inheritdoc />
+        </member>
+        <member name="T:Serilog.Sinks.Udp.Private.XmlSerializer">
+            <remarks>
+            The methods in this class where influenced by
+            https://weblog.west-wind.com/posts/2018/Nov/30/Returning-an-XML-Encoded-String-in-NET.
+            </remarks>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.TextFormatters.Log4jTextFormatter">
+            <summary>
+            Text formatter serializing log events into log4j compliant XML.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.TextFormatters.Log4jTextFormatter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Serilog.Sinks.Udp.TextFormatters.Log4jTextFormatter"/> class.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.TextFormatters.Log4jTextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)">
+            <summary>
+            Format the log event into the output.
+            </summary>
+            <param name="logEvent">The event to format.</param>
+            <param name="output">The output.</param>
+        </member>
+        <member name="T:Serilog.Sinks.Udp.TextFormatters.Log4netTextFormatter">
+            <summary>
+            Text formatter serializing log events into log4net compliant XML.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.TextFormatters.Log4netTextFormatter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Serilog.Sinks.Udp.TextFormatters.Log4netTextFormatter"/> class.
+            </summary>
+        </member>
+        <member name="M:Serilog.Sinks.Udp.TextFormatters.Log4netTextFormatter.Format(Serilog.Events.LogEvent,System.IO.TextWriter)">
+            <summary>
+            Format the log event into the output.
+            </summary>
+            <param name="logEvent">The event to format.</param>
+            <param name="output">The output.</param>
+        </member>
+    </members>
+</doc>

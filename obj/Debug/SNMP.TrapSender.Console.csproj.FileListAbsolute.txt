@@ -15,3 +15,12 @@ D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.xml
 D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.Console.xml
 D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.File.pdb
 D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.File.xml
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\LiteDB.dll
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.PeriodicBatching.dll
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.PeriodicBatching.xml
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.EventLog.dll
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.EventLog.xml
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.Udp.dll
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.Udp.pdb
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\bin\Debug\Serilog.Sinks.Udp.xml
+D:\Rahman\SNMP.TrapSender.Console\SNMP.TrapSender.Console\obj\Debug\SNMP.TrapSender.Console.csprojAssemblyReference.cache
