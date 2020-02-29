@@ -22,7 +22,7 @@ namespace SNMP.TrapSender.ConsoleApp
                     // Initialise logger
                     Log.Logger = new LoggerConfiguration()
                         .WriteTo.ColoredConsole()
-                        .WriteTo.File("SNMPTrapSenderLogFile.txt", rollingInterval: RollingInterval.Day)
+                        .WriteTo.File("SNMPTrapSenderLogFile.txt", rollingInterval: RollingInterval.Month)
                         .WriteTo.EventLog("SNMP Trap Sender", manageEventSource: true)
                         .WriteTo.Udp("localhost", 7071, AddressFamily.InterNetwork)
                         .CreateLogger();
@@ -63,6 +63,8 @@ namespace SNMP.TrapSender.ConsoleApp
                            {
                                Log.Error(Environment.NewLine + error.ToString());
                            }
+
+                           messageSent = true;
                        }
                        );
 
